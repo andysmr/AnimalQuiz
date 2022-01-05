@@ -31,6 +31,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Начать опрос">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="cSK-X5-8vx" kind="presentation" modalPresentationStyle="fullScreen" id="IUh-Rr-1h1"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -81,6 +84,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="84"/>
+        </scene>
+        <!--Вопрос №-->
+        <scene sceneID="YdH-a3-mH4">
+            <objects>
+                <viewController id="fsN-4N-0wp" customClass="QuestionViewController" customModule="AnimalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G0y-RH-v4Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lGc-vA-dCW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="Wg6-Um-d4J">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="T1G-Jm-ntf"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="fGX-Xh-PpY" kind="show" id="Otf-2s-cf3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zSd-mZ-f2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="82.3088455772114"/>
+        </scene>
+        <!--Результат-->
+        <scene sceneID="6Tp-j5-64f">
+            <objects>
+                <viewController id="fGX-Xh-PpY" customClass="FinalViewController" customModule="AnimalQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HOJ-g8-qqh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="gl5-j9-Jal"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Результат" id="NAY-TB-APR">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="YVa-To-Gix"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="7S1-BF-BzB"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1w-qK-N6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2450" y="83"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PZR-YS-ghn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cSK-X5-8vx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="JWA-b9-3pe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fsN-4N-0wp" kind="relationship" relationship="rootViewController" id="l9M-Td-agO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KzQ-kC-4TY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720.79999999999995" y="82.3088455772114"/>
         </scene>
     </scenes>
     <resources>
