@@ -257,12 +257,6 @@
                             <constraint firstItem="hEO-yC-I0n" firstAttribute="centerY" secondItem="G0y-RH-v4Q" secondAttribute="centerY" id="ZCb-1o-Qrb"/>
                             <constraint firstItem="lGc-vA-dCW" firstAttribute="trailing" secondItem="hEO-yC-I0n" secondAttribute="trailing" constant="16" id="o9C-hS-IcV"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="W7g-Wt-9F4"/>
-                                <exclude reference="s8d-NF-oKg"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="Wg6-Um-d4J">
                         <barButtonItem key="backBarButtonItem" title="Back" id="T1G-Jm-ntf"/>
