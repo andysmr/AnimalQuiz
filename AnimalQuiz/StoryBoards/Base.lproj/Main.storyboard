@@ -262,6 +262,22 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="T1G-Jm-ntf"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="multipleStackView" destination="s8d-NF-oKg" id="SCw-Q5-UKA"/>
+                        <outlet property="progressView" destination="Q5J-sK-1bd" id="mwc-0M-OFu"/>
+                        <outlet property="questionLabel" destination="uTS-Jk-bZL" id="bQ6-PI-JKg"/>
+                        <outlet property="rangedSlider" destination="GrW-56-zGQ" id="kQ0-Bn-C78"/>
+                        <outlet property="rangedStackView" destination="hEO-yC-I0n" id="YbO-id-aXl"/>
+                        <outlet property="singleStackView" destination="W7g-Wt-9F4" id="Sb9-5E-lsi"/>
+                        <outletCollection property="singleButtons" destination="3bm-ss-NMI" collectionClass="NSMutableArray" id="yIW-2V-OF0"/>
+                        <outletCollection property="singleButtons" destination="DzT-No-pTm" collectionClass="NSMutableArray" id="uif-NX-qFR"/>
+                        <outletCollection property="singleButtons" destination="smp-3T-9vd" collectionClass="NSMutableArray" id="MNq-od-MuU"/>
+                        <outletCollection property="singleButtons" destination="0xN-Mk-JfW" collectionClass="NSMutableArray" id="WUY-Zb-Qvb"/>
+                        <outletCollection property="multipleLabels" destination="r1B-5b-osg" collectionClass="NSMutableArray" id="shN-sf-Rf3"/>
+                        <outletCollection property="multipleLabels" destination="MzI-pO-5jq" collectionClass="NSMutableArray" id="r6J-Kf-lry"/>
+                        <outletCollection property="multipleLabels" destination="rnc-fM-0V3" collectionClass="NSMutableArray" id="kqL-AK-Nlv"/>
+                        <outletCollection property="multipleLabels" destination="xa2-NG-YKa" collectionClass="NSMutableArray" id="Yol-6a-kxl"/>
+                        <outletCollection property="rangedLabels" destination="F1F-rs-q7M" collectionClass="NSMutableArray" id="A91-20-7je"/>
+                        <outletCollection property="rangedLabels" destination="c0W-fp-LdV" collectionClass="NSMutableArray" id="4Z9-ba-rVT"/>
                         <segue destination="fGX-Xh-PpY" kind="show" id="Otf-2s-cf3"/>
                     </connections>
                 </viewController>
