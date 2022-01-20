@@ -42,8 +42,8 @@ extension Question {
                      type: .range,
                      answers: [
                         Answer(text: "Обожаю", type: .dog),
-                        Answer(text: "Обожаю", type: .cat),
-                        Answer(text: "Ненавижу", type: .rabbit),
+                        Answer(text: "Люблю", type: .cat),
+                        Answer(text: "Равнодушен", type: .rabbit),
                         Answer(text: "Ненавижу", type: .turtle)
                      ]
                     )

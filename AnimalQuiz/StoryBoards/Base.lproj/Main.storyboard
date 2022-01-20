@@ -122,6 +122,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Ответить">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="fsN-4N-0wp" eventType="touchUpInside" id="QIL-gM-73v"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -143,6 +146,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="fsN-4N-0wp" eventType="touchUpInside" id="eck-BO-sSn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzT-No-pTm">
                                         <rect key="frame" x="0.0" y="46" width="343" height="38"/>
@@ -150,6 +156,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="fsN-4N-0wp" eventType="touchUpInside" id="dKf-T9-B8b"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smp-3T-9vd">
                                         <rect key="frame" x="0.0" y="92" width="343" height="38"/>
@@ -157,6 +166,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="fsN-4N-0wp" eventType="touchUpInside" id="hB9-Lw-dpL"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xN-Mk-JfW">
                                         <rect key="frame" x="0.0" y="138" width="343" height="38"/>
@@ -164,6 +176,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Button">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="singleButtonAnswerPressed:" destination="fsN-4N-0wp" eventType="touchUpInside" id="3SK-F7-qdd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -232,6 +247,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Ответить">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="multipleAnswerPressed" destination="fsN-4N-0wp" eventType="touchUpInside" id="wVJ-Kr-elz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -278,7 +296,11 @@
                         <outletCollection property="multipleLabels" destination="xa2-NG-YKa" collectionClass="NSMutableArray" id="Yol-6a-kxl"/>
                         <outletCollection property="rangedLabels" destination="F1F-rs-q7M" collectionClass="NSMutableArray" id="A91-20-7je"/>
                         <outletCollection property="rangedLabels" destination="c0W-fp-LdV" collectionClass="NSMutableArray" id="4Z9-ba-rVT"/>
-                        <segue destination="fGX-Xh-PpY" kind="show" id="Otf-2s-cf3"/>
+                        <outletCollection property="multipleSwitches" destination="3OS-SN-WLh" collectionClass="NSMutableArray" id="khV-MQ-OcA"/>
+                        <outletCollection property="multipleSwitches" destination="Djf-Tt-Icl" collectionClass="NSMutableArray" id="zof-R5-xIk"/>
+                        <outletCollection property="multipleSwitches" destination="xsq-AA-PMy" collectionClass="NSMutableArray" id="iYc-J7-1aK"/>
+                        <outletCollection property="multipleSwitches" destination="z9p-pE-xx3" collectionClass="NSMutableArray" id="3Xq-0h-UyK"/>
+                        <segue destination="fGX-Xh-PpY" kind="show" identifier="showResult" id="Otf-2s-cf3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSd-mZ-f2Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -321,10 +343,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="NAY-TB-APR">
                         <barButtonItem key="backBarButtonItem" title="Back" id="YVa-To-Gix"/>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="7S1-BF-BzB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="7S1-BF-BzB">
+                            <connections>
+                                <segue destination="IXM-1b-SaA" kind="unwind" unwindAction="unwindFor:" id="nfp-J8-0BV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1w-qK-N6L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="IXM-1b-SaA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2448.8000000000002" y="82.3088455772114"/>
         </scene>
